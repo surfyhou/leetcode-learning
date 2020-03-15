@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            int mean1(int n,int m)
+            {
+                int k = 0;
+                k = (n + m) / 2;
+                return k;
+            }
+            int mean2(int n, int m)
+            {
+                int k = 0;
+                k = n + (m - n) / 2;
+                return k;
+            }
+            for(int i = 1073741822;i < Int32.MaxValue; i++)
+            {
+                System.Console.WriteLine(mean1(i, i));
+                System.Console.WriteLine(mean2(i, i));
+                ////System.Console.WriteLine(mean1(1, i));
+                ////System.Console.WriteLine(mean2(1, i));
+            }
+            Console.ReadLine();
+        }
+     
+    
+    }
+}
